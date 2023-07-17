@@ -462,6 +462,16 @@ function Project() {
 								</div>
 							</div>
 						</div>
+						<div className="pj_content">
+							<hr className="pj_underline" />
+							<a
+								href="https://velog.io/@ohjoo1130/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-meerkats-%ED%9A%8C%EA%B3%A0"
+								className="link"
+								style={{ fontWeight: '700' }}
+							>
+								🔗 meerkats 프로젝트 회고
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
