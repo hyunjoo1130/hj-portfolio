@@ -16,7 +16,7 @@ function Header() {
 			<HeaderWrapper>
 				<UpdateDate>
 					<UpdateDateTxt onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-						{hover ? 'Previous update 2023 / 06 / 29' : 'Latest updated 2023 / 07 / 07'}
+						{hover ? 'Previous update 2023 / 07 / 17' : 'Latest updated 2023 / 08 / 02'}
 					</UpdateDateTxt>
 				</UpdateDate>
 				<TabBox>
