@@ -11,12 +11,28 @@ function Header() {
 		setActive(txt);
 	};
 
+	function LatestUpdateDate() {
+		const now = new Date();
+		const utc = now.getTime() + now.getTimezoneOffset() * 60 * 1000;
+
+		const koreaTime = 9 * 60 * 60 * 1000;
+		const koreaNow = new Date(utc + koreaTime);
+
+		const year = koreaNow.getFullYear();
+		const month = koreaNow.getMonth() + 1;
+		const day = koreaNow.getDate();
+
+		return `${year} / ${month.length === 2 ? month : `0${month}`} / ${
+			day.toString().length === 2 ? day : `0${day}`
+		}`;
+	}
+
 	return (
 		<HeaderContainer>
 			<HeaderWrapper>
 				<UpdateDate>
 					<UpdateDateTxt onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-						{hover ? 'Previous update 2023 / 07 / 17' : 'Latest updated 2023 / 08 / 02'}
+						{hover ? 'Previous update 2023 / 08 / 02' : `Latest updated ${LatestUpdateDate()}`}
 					</UpdateDateTxt>
 				</UpdateDate>
 				<TabBox>

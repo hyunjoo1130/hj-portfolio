@@ -18,7 +18,7 @@ function Work() {
 						<div className="list_idid">
 							<div className="idid">
 								<p className="details">구독서비스 관리 플랫폼 사이트</p>
-								<p className="details">크롤링 - Jira Software / 미리캔버스</p>
+								<p className="details">크롤링 - Jira Software / 미리캔버스 / Jetbrains</p>
 							</div>
 							<div className="skills">
 								<span className="skills_txt">Skills</span>
